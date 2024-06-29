@@ -1,0 +1,37 @@
+Kubernetes CLI Commands to Apply Configurations
+# Apply the Deployment
+kubectl apply -f nginx-deployment.yaml
+
+# Apply the Service
+kubectl apply -f nginx-service.yaml
+
+# Apply the Ingress
+kubectl apply -f nginx-ingress.yaml
+
+
+Setting Up Git Repository and Pushing Files
+
+# Initialize a new Git repository
+git init nginx-k8s
+
+# Change directory to the new repository
+cd nginx-k8s
+
+# Create the YAML files
+touch nginx-deployment.yaml nginx-service.yaml nginx-ingress.yaml
+
+# Add the content to each file (copy the above YAML configurations into the respective files)
+
+# Stage the files
+git add nginx-deployment.yaml nginx-service.yaml nginx-ingress.yaml
+
+# Commit the files
+git commit -m "Add Kubernetes deployment, service, and ingress for Nginx"
+
+# Create a new repository on GitHub (or another Git hosting service)
+
+# Add the remote origin (replace <your-repo-url> with the URL of your remote repository)
+git remote add origin <your-repo-url>
+
+# Push the changes to the remote repository
+git push -u origin master
